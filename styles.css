@@ -1,0 +1,220 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+header img{
+    height: 3cm;
+    width: 3cm;
+    border-radius: 100%;
+}
+
+
+video {
+    opacity: 3;
+}
+
+p {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* Banner Carousel Styling */
+.banner-carousel {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.banner-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.banner-image.active {
+    opacity: 1;
+}
+
+/* Background Video Styling */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Overlay for darkening the background video */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 0;
+}
+
+/* Content Styling */
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Countdown Timer Circle */
+.countdown-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #32a236;
+    border-radius: 50%;
+    margin: 1rem 0;
+    position: relative;
+    right: -47%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.countdown-circle #countdown {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+/* Join Now and Subscribe Now Buttons */
+.join-now, .subscribe-now {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 0.5rem;
+}
+
+.join-now:hover, .subscribe-now:hover {
+    background-color: #218838;
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+    /* Adjust banner carousel height */
+    .banner-carousel {
+        max-height: 200px;
+    }
+
+    /* Resize content container padding and text */
+    .container {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    header img{
+        height: 5cm;
+        width: 5cm;
+        border-radius: 100%;
+    }
+
+    /* Countdown timer styling */
+    .countdown-circle {
+        width: 80px;
+        height: 80px;
+        right: 0;
+        margin: 1rem auto;
+        position: relative;
+        margin-right: 40%;
+    }
+    
+
+    .countdown-circle #countdown {
+        font-size: 1.6rem;
+    }
+
+    /* Button styling for mobile */
+    .join-now, .subscribe-now {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Smaller adjustments for extra-small screens */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .countdown-circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .countdown-circle #countdown {
+        font-size: 1.4rem;
+    }
+
+    .join-now, .subscribe-now {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
