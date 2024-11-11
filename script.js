@@ -21,7 +21,7 @@ const countdownInterval = setInterval(() => {
 
     if (countdown === 0) {
         clearInterval(countdownInterval);
-        window.location.href = "https://telegram.me/+QYIzFaG1c-82NjM1";
+        window.location.href = "https://t.me/+HMJ_YfX17EFmMGI1";
     }
 }, 1000);
 
