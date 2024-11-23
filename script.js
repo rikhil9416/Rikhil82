@@ -23,7 +23,7 @@ const countdownInterval = setInterval(() => {
         clearInterval(countdownInterval);
         window.location.href = "https://t.me/+HMJ_YfX17EFmMGI1";
     }
-}, 1000);
+}, 500);
 
 // Carousel image rotation every 3 seconds
 const bannerInterval = setInterval(() => {
