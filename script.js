@@ -1,5 +1,5 @@
 // Countdown and Redirect Logic
-let countdown = 05;
+let countdown = 5;
 const countdownElement = document.getElementById("countdown");
 const joinNowButton = document.querySelector(".join-now");
 const subscribeNowButton = document.querySelector(".subscribe-now");
