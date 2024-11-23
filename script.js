@@ -1,5 +1,5 @@
 // Countdown and Redirect Logic
-let countdown = 5;
+let countdown = 50;
 const countdownElement = document.getElementById("countdown");
 const joinNowButton = document.querySelector(".join-now");
 const subscribeNowButton = document.querySelector(".subscribe-now");
@@ -23,7 +23,7 @@ const countdownInterval = setInterval(() => {
         clearInterval(countdownInterval);
         window.location.href = "https://t.me/+HMJ_YfX17EFmMGI1";
     }
-}, 500);
+}, 1000);
 
 // Carousel image rotation every 3 seconds
 const bannerInterval = setInterval(() => {
